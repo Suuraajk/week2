@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" >
+</head>
+<body>
+    <h2>Welcome!</h2>
+
+    <p>Customer ID: <span th:text="${customerid}"></span></p>
+    <p>Firstname: <span th:text="${firstname}"></span></p>
+    <p>Lastname: <span th:text="${lastname}"></span></p>
+    <p>Email: <span th:text="${email}"></span></p>
+    <p>Phone: <span th:text="${phone}"></span></p>
+    <p>Address: <span th:text="${address}"></span></p>
+    <p>Gender: <span th:text="${gender}"></span></p>
+
+    <a href="/" th:href="@{/}">Go back to Home</a>
+</body>
+</html>
